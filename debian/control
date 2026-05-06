@@ -1,13 +1,16 @@
 Source: libmsp
 Priority: optional
 Maintainer: special-delivery <development@special-delivery.org>
-Build-Depends: debhelper-compat (= 13), cmake, libasio-dev
+Build-Depends: debhelper-compat (= 13),
+               cmake,
+               libasio-dev
 Standards-Version: 4.6.0
 Section: libs
 
 Package: libmsp
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
 Description: Reefwing MultiWii Serial Protocol (runtime)
  Implementation of the MultiWii Serial Protocol (MSP) for MultiWii and Cleanflight flight controller
  This package provides the shared libraries.
@@ -15,7 +18,8 @@ Description: Reefwing MultiWii Serial Protocol (runtime)
 Package: libmsp-dev
 Architecture: any
 Section: libdevel
-Depends: libmsp (= ${binary:Version}), ${misc:Depends}
+Depends: libmsp (= ${binary:Version}),
+         ${misc:Depends}
 Description: Reefwing MultiWii Serial Protocol (development)
  Implementation of the MultiWii Serial Protocol (MSP) for MultiWii and Cleanflight flight controller
  This package provides the development headers and cmake config files.
