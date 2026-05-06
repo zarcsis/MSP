@@ -1,0 +1,26 @@
+Source: libmsp
+Priority: optional
+Maintainer: special-delivery <development@special-delivery.org>
+Build-Depends: debhelper-compat (= 13), cmake
+Standards-Version: 4.6.0
+Section: libs
+
+Package: libmsp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Reefwing MultiWii Serial Protocol (runtime)
+ This package provides the shared libraries.
+
+Package: libmsp-dev
+Architecture: any
+Section: libdevel
+Depends: libmsp (= ${binary:Version}), ${misc:Depends}
+Description: Reefwing MultiWii Serial Protocol (development)
+ This package provides the development headers and cmake config files.
+
+Package: libmsp-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Reefwing MultiWii Serial Protocol (documentation)
+ This package provides the documentation.

@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libmsp
+Source: https://github.com/Reefwing-Software/Reefwing-MSP
+
+Files: *
+Copyright: 2024 David Such
+
+License: MIT
+ MIT
+ .
+ (See https://opensource.org/license/mit for full text)
