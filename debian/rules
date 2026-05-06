@@ -2,3 +2,7 @@
 
 %:
 	dh $@ --sourcedirectory=msp
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DBUILD_EXAMPLES=OFF
